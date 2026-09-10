@@ -1,0 +1,11 @@
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+auto-format = true
+formatter = { command = "rustfmt" }
+
+[language-server.rust-analyzer]
+command = "/Users/martin/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"

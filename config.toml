@@ -1,0 +1,27 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+end-of-line-diagnostics = "disable"
+trim-final-newlines = true
+trim-trailing-whitespace = true
+
+[editor.inline-diagnostics]
+cursor-line = "hint" # show warnings and errors on the cursorline inline
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+max-wrap = 25
