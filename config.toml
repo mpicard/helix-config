@@ -2,10 +2,13 @@ theme = "catppuccin_mocha"
 
 [editor]
 # line-number = "relative"
+auto-format = true
+bufferline = "multiple"
+completion-replace = true
+cursorline = true
 end-of-line-diagnostics = "disable"
 trim-final-newlines = true
 trim-trailing-whitespace = true
-bufferline = "always"
 
 [editor.inline-diagnostics]
 cursor-line = "hint" # show warnings and errors on the cursorline inline
@@ -15,16 +18,18 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-[editor.cursor-shape]
-
 [editor.indent-guides]
 render = true
 skip-levels = 1
+character = "┆"
 
 [editor.soft-wrap]
 enable = true
 wrap-at-text-width = true
 max-wrap = 25
+
+[editor.auto-save]
+focus-lost = true
 
 [keys.normal]
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
